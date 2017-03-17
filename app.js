@@ -41,6 +41,9 @@ const addCarRepairs = require('./routes/addCarRepairs');
 const viewAirConditioning = require('./routes/viewAirConditioning');
 const addAirConditioning = require('./routes/addAirConditioning');
 
+const viewAutoRepairs = require('./routes/viewAutoRepairs');
+const addAutoRepairs = require('./routes/addAutoRepairs');
+
 
 
 const dbOptions = {
