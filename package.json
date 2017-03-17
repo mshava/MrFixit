@@ -1,0 +1,29 @@
+{
+  "name": "mr_fixit",
+  "version": "1.0.0",
+  "description": "requesting your car service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshava/MrFixit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mshava/MrFixit/issues"
+  },
+  "homepage": "https://github.com/mshava/MrFixit#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "connection-provider": "^1.0.10",
+    "cookie-parser": "^1.4.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.1",
+    "lodash": "^4.17.4",
+    "node-uuid": "^1.4.7"
+  }
+}
