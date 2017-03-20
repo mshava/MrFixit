@@ -9,7 +9,7 @@ const express      = require('express'),
       lodash       = require('lodash'),
       app          = express();
 
-
+/*
 const ViewCarServicesDataService = require('./data_services/viewCarServicesDataService');
 const AddCarServicesDataServices = require('./data_services/addCarServicesDataServices');
 
@@ -25,11 +25,18 @@ const AddAirConditioningDataServices = require('./data_services/addAirConditioni
 const ViewAutoRepairsDataServices = require('./data_services/viewAutoRepairsDataServices');
 const AddAutoRepairDataServices = require('./data_services/addAutoRepairDataServices');
 
-const viewMechanicalRepairsDataServices = require('./data_services/viewMechanicalRepairsDataServices');
-const viewMechanicsDataServices = require('./data_services/viewMechanicsDataServices');
-const viewUsersDataServices = require('./data_services/viewUsersDataServices');
+const ViewMechanicalRepairsDataServices = require('./data_services/viewMechanicalRepairsDataServices');
+const AddMechanicalRepairDataServices = require('./data_services/addMechanicalRepairDataServices');
 
-const viewCarService = require('./routes/viewCarService');
+const ViewMechanicsDataServices = require('./data_services/viewMechanicsDataServices');
+const AddMechanicsDataServices = require('./data_services/addMechanicsDataServices');
+
+const ViewUsersDataServices = require('./data_services/viewUsersDataServices');
+const AddUsersDataServices = require('./data_services/addUsersDataServices');
+
+
+
+const viewCarServices = require('./routes/viewCarServices');
 const addCarServices = require('./routes/addCarServices');
 
 const viewAutoElectronics = require('./routes/viewAutoElectronics');
@@ -44,6 +51,14 @@ const addAirConditioning = require('./routes/addAirConditioning');
 const viewAutoRepairs = require('./routes/viewAutoRepairs');
 const addAutoRepairs = require('./routes/addAutoRepairs');
 
+const viewMechanicalRepairs = require('./routes/viewMechanicalRepairs');
+const addMechanicalRepairs = require('./routes/addMechanicalRepairs');
+
+const viewMechanics = require('./routes/viewMechanics');
+const addMechanics = require('./routes/addMechanics');
+
+const viewUsers = require('./routes/viewUsers');
+const addUsers = require('./routes/addUsers');
 
 
 const dbOptions = {
@@ -56,19 +71,28 @@ const dbOptions = {
 
 const servicesSetupCallBack = function(connection) {
   return {
-
-      viewCarServicesDataService : new ViewCarServicesDataServices(connection),
-      viewAutoElectronicsDataServices : new ViewAutoElectronicsDataServices(connection),
-      viewCarRepairsDataServices : new ViewCarRepairDataServices(connection),
-      viewAirConditioningDataServices : new ViewAirConditioningDataServices(connection),
-      viewAutoRepairsDataServices : new ViewAutoRepairsDataServices(connection),
-      viewMechanicalRepairsDataServices : new ViewMechanicalRepairsDataServices(connection),
-      viewMechanicsDataServices : new ViewMechanicsDataServices(connection),
-      viewUsersDataServices : new ViewUsersDataServices(connection)
+        viewCarServicesDataService : new ViewCarServicesDataServices(connection),
+        addCarServicesDataServices : new AddCarServicesDataServices(connection),
+        viewAutoElectronicsDataServices : new ViewAutoElectronicsDataServices(connection),
+        addAutoElectronicsDataServices : new AddAutoElectronicsDataServices(connection),
+        viewCarRepairsDataServices : new ViewCarRepairDataServices(connection),
+        addCarRepairsDataServices : new AddCarRepairsDataServices(connection),
+        viewAirConditioningDataServices : new ViewAirConditioningDataServices(connection),
+        addAirConditioningDataServices : new AddAirConditioningDataServices(connection),
+        viewAutoRepairsDataServices : new ViewAutoRepairsDataServices(connection),
+        addAutoRepairDataServices : new AddAutoRepairDataServices(connection),
+        viewMechanicalRepairsDataServices : new ViewMechanicalRepairsDataServices(connection),
+        addMechanicalRepairDataServices : new AddMechanicalRepairDataServices(connection),
+        viewMechanicsDataServices : new ViewMechanicsDataServices(connection),
+        addMechanicsDataServices : new AddMechanicsDataServices(connection),
+        viewUsersDataServices : new ViewUsersDataServices(connection),
+        addUsersDataServices : new AddUsersDataServices(connection)
   }
 };
 
 app.use(connectionPv(dbOptions, serviceSetupCallBack));
+*/
+
 app.use(cookieParser('shhhh, very secret'));
 app.use(session({ secret : 'keyboard cat', cookie :{ maxAge : 3600000 }, resave : true, saveUninitialized : true }));
 app.use(express.static('public'));

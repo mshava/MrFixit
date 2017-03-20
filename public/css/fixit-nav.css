@@ -1,4 +1,6 @@
 body {
+  padding-bottom: 2rem;	
+  width: auto;
   padding-top: 20px;
   font-family: Arial, Helvetica, Verdana, Tahoma;
   font-size: 12px;
@@ -16,6 +18,55 @@ h3 {
   font-weight: bolder;
 }
 
+h4 {
+  margin: 25px;
+  color: #fff04f;
+  background-color: #55585d;
+  border-color: #55585d;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding: 8px 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.list {
+  color: #f51a20;
+  padding: 2px 120px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: #fff04f;
+  opacity: 0.7;
+}
+
+h2:hover {
+    background-color: #fff04f;
+    opacity: 0.7;
+  }
+
+h4:hover {
+        opacity: 0.7;
+    }
+
+.cardText {
+  color: #f51a20;
+  padding: 5px 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.backgrnd {
+  background: url(/images/service.jpg) no-repeat;
+  background-size: 530px 300px;
+  background-position: center;
+}
+
 .content {
   width: 700px;
   margin: 0 auto;
@@ -28,17 +79,6 @@ h3 {
   border-top: 1px solid #eee;
 }
 
-.firstData {
-  width: 230px;
-}
-.gp1 {
-  background-image: url(images/images (1).jpg);
-  background-size: 55px;
-  background-position: center
-}
-.secondThird {
-  width: 400px;
-}
 
 /* add .nav-justified, see: https://github.com/twbs/bootstrap/issues/18653 */
 .nav-justified {

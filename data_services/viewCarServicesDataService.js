@@ -1,4 +1,4 @@
-const QueryService = require('../data_services/queryService');
+const QueryService = require('../data_services/query_services');
 const bluebird = require('bluebird');
 
 module.exports = function() {
