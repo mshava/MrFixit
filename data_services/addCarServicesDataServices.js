@@ -4,6 +4,6 @@ const bluebird = require('bluebird');
 module.exports = function() {
     const queryService = new QueryService(connection);
     this.addCarServices = function(data) {
-        return queryService.excuteQuery('select * from car_services');
+        return queryService.excuteQuery('insert into car_services set ?', data);
     };
 };

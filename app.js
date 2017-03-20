@@ -9,7 +9,7 @@ const express      = require('express'),
       lodash       = require('lodash'),
       app          = express();
 
-/*
+
 const ViewCarServicesDataService = require('./data_services/viewCarServicesDataService');
 const AddCarServicesDataServices = require('./data_services/addCarServicesDataServices');
 
@@ -91,8 +91,6 @@ const servicesSetupCallBack = function(connection) {
 };
 
 app.use(connectionPv(dbOptions, serviceSetupCallBack));
-*/
-
 app.use(cookieParser('shhhh, very secret'));
 app.use(session({ secret : 'keyboard cat', cookie :{ maxAge : 3600000 }, resave : true, saveUninitialized : true }));
 app.use(express.static('public'));
